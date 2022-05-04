@@ -1,0 +1,78 @@
+.main-hide {
+    display: none;
+}
+
+.main {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-bg {
+    height: 51vh;
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('./images/buy.webp');
+    background-size: cover;
+    background-position: right 11%;
+}
+
+.search-bg {
+    width: 55%;
+}
+
+.search-input {
+    width: 524px;
+    height: 56px;
+    border-radius: 13px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.filter-button {
+    background: darkgoldenrod;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border: 0;
+    outline: 0;
+    text-align: left;
+    min-width: 150px;
+    display: inline-flex;
+    justify-content: space-between;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+
+.button::after {
+    font-family: sans-serif;
+    content: "▼";
+    padding-left: 0.5em;
+}
+
+
+/* filter code runs here.  */
+
+.filter {
+    position: fixed;
+    width: 601px;
+    height: 501px;
+    padding: 10px;
+    border: 3px solid #147d43;
+    background-color: #d4fce6;
+    top: -50%;
+    left: 50%;
+    margin-top: -300.5px;
+    /* Negative half of height. */
+    margin-left: -250px;
+    /* Negative half of width. */
+    transition: all .5s ease;
+}
+
+
+/* filter code ends here.  */
